@@ -1,0 +1,29 @@
+from DobotEDU import *
+import time
+
+magician.ptp(mode=0, x=78, y=200, z=70, r=50)
+magician.set_endeffector_gripper(enable=True, on=False)   
+time.sleep(1)
+magician.ptp(mode=0, x=78, y=200, z=-10, r=50)
+magician.set_endeffector_gripper(enable=True, on=True)  
+time.sleep(1)
+magician.ptp(mode=0, x=78, y=-200, z=70, r=50)
+magician.ptp(mode=0, x=78, y=-200, z=-10, r=50)
+magician.set_endeffector_gripper(enable=True, on=False) 
+time.sleep(1)
+magician.ptp(mode=0, x=78, y=200, z=70, r=50)
+magician.set_endeffector_gripper(enable=True, on=True)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
